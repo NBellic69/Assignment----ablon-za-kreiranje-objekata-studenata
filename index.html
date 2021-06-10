@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Šablon za kreiranje objekata studenata</title>
+</head>
+
+<body>
+    <script>
+
+        function Rekt(name, address, phone, course) {
+            this.name = name;
+            this.address = address;
+            this.phone = phone;
+            this.course = course;
+
+            this.getInfo = function () {
+                return "Name: " + this.name + "\n" +
+                    "Address: " + this.address + "\n" +
+                    "Phone: " + this.phone + "\n" +
+                    "Course: " + this.course
+            };
+        };
+
+        var stu1 = new Rekt("Jhon Snow", "Winterfell", 3699630123, "War strategy");
+        var sty2 = new Rekt("Arya Stark", "Winterfell-Braavos", 333666999, "Faceless Man");
+        var stu3 = new Rekt("Tyrion Lannister", "Westerosi", 346789120, "Tactics and Strategy");
+     
+        console.log(sty2);
+    </script>
+</body>
+
+</html>
